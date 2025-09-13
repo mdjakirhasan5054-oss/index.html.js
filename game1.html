@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Game 1</title>
+<link rel="stylesheet" href="css/style.css">
+<script src="js/telegram.js"></script>
+</head>
+<body>
+<h2>Game 1</h2>
+<button onclick="sendAnswer()">Send Today's Code</button>
+<script>
+function sendAnswer(){
+    const message = "আজকের কোড: 578379\nবল কালার: নীল\nনাম্বার চয়েজ: 24";
+    sendToTelegram(message);
+    alert("Message sent to Telegram group!");
+}
+</script>
+</body>
+</html>
